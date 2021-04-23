@@ -49,7 +49,6 @@ library EnumerableSet {
      * Returns true if the value was added to the set, that is if it was not
      * already present.
      */
-     
     function _add(Set storage set, bytes32 value) private returns (bool) {
         if (!_contains(set, value)) {
             set._values.push(value);
